@@ -96,36 +96,12 @@
 /* Main */
 
 /* Feature section, team section, portfolio section*/
-.feature-box-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 264px;
-  height: 112px;
-  padding: 24px 100px;
-  margin-bottom: 8px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-}
 
-.feature-section,
 .team-section,
 .portfolio-section {
   padding: 120px 0;
 }
 
-.feature-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-
-.feature-li {
-  width: 264px;
-}
-
-.feature-title,
 .team-title,
 .portfolio-title {
   margin-bottom: 8px;
@@ -175,7 +151,6 @@
   padding: 32px 0;
 }
 
-.feature-text,
 .team-text,
 .portfolio-text {
   line-height: 1.5;
