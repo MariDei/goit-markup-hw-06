@@ -113,7 +113,7 @@ input {
 
 .nav-items,
 .address-menu {
-    display: none;
+  display: none;
 }
 
 .mobile-burger-btn {
@@ -128,7 +128,7 @@ input {
 }
 
 .mobile-burger-btn-icon {
-  fill: #2F2F37;
+  fill: #2f2f37;
 }
 
 /* Mobile menu */
@@ -144,7 +144,7 @@ input {
   top: 0;
   left: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   visibility: hidden;
   opacity: 0;
 }
@@ -164,10 +164,11 @@ input {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #E7E9FC;
+  background-color: #e7e9fc;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-navigation {
@@ -177,11 +178,11 @@ input {
 }
 
 .mobile-nav-link.current {
-  color: #404BBF;
+  color: #404bbf;
 }
 
 .mobile-nav-link {
-  color: #2E2F42;
+  color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -198,7 +199,7 @@ input {
 .mobile-contacts-list {
   display: flex;
   flex-direction: column;
-  gap: 24px; 
+  gap: 24px;
 }
 
 .mobile-contacts-item {
@@ -209,7 +210,7 @@ input {
 }
 
 .mobile-link-phone {
-  color: #4D5AE5;
+  color: #4d5ae5;
 }
 
 .mobile-link-email {
@@ -239,7 +240,7 @@ input {
 }
 
 .mobile-socials-icon {
-  fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 
 @media only screen and (min-width: 768px) {
@@ -256,12 +257,12 @@ input {
   .header .logo {
     margin-right: 120px;
   }
-  
+
   .nav-items {
     display: flex;
     gap: 40px;
   }
-  
+
   .nav-items li:last-child {
     margin-right: 0;
   }
@@ -271,7 +272,7 @@ input {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
-    color: #2E2F42;
+    color: #2e2f42;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -284,17 +285,17 @@ input {
   .contact-link:hover,
   .contact-link:focus,
   .nav-link.current {
-    color: #404BBF;
+    color: #404bbf;
   }
 
   .nav-link.current::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: -1px;
     width: 100%;
     height: 4px;
-    background-color: #404BBF;
+    background-color: #404bbf;
     border-radius: 2px;
   }
 
@@ -308,7 +309,7 @@ input {
     flex-direction: column;
     gap: 12px;
   }
-  
+
   .contact-link {
     color: #434455;
     font-size: 12px;
@@ -316,7 +317,7 @@ input {
     letter-spacing: 0.04em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .mobile-burger-btn {
     display: none;
     margin: 16px 0;
@@ -368,8 +369,9 @@ input {
 }
 
 .hero-title {
+  display: block;
   max-width: 288px;
-  margin: 0 auto 72px;
+  margin: 0 auto 72px auto;
   color: #fff;
   font-size: 36px;
   font-weight: 700;
@@ -903,7 +905,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
-  }  
+  }
 
   footer.logo {
     margin-right: auto;
@@ -921,9 +923,9 @@ input {
     gap: 24px;
   }
 
-.footer-subscribe-btn {
+  .footer-subscribe-btn {
     margin: 0;
-}
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -1120,9 +1122,11 @@ input {
 .checkbox-icon {
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.40);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1132,17 +1136,17 @@ input {
 }
 
 .checkbox:focus + .form-label > .checkbox-icon {
-  border-color: #4D5AE5;
+  border-color: #4d5ae5;
 }
 
 .checkbox:checked + .form-label > .checkbox-icon {
   background-color: #404bbf;
   border: none;
-  fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 
 .privacy-checkbox-text {
-  color:  #8E8F99;
+  color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -1184,6 +1188,3 @@ input {
     min-height: 584px;
   }
 }
-
-
-
