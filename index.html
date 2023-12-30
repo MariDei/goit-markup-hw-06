@@ -58,7 +58,6 @@
           </svg>
         </button>
       </div>
-
       <!-- Mobile menu -->
        <div class="mobile-menu">
         <button class="mobile-close-btn" type="button">
@@ -144,8 +143,6 @@
           </ul>
         </div>
       </div>
-
-
     </header>
     <main>
       <!-- Hero section -->
@@ -805,7 +802,7 @@
       </div>
     </footer>
     <!-- Modal window -->
-    <!-- <div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button
           class="modal-btn-close"
@@ -867,28 +864,29 @@
               name="user-comment"
               placeholder="Text input"></textarea>
           </div>
-          <div class="form-privacy">
+          <div class="form-privacy-checkbox">
             <input
               class="checkbox visually-hidden"
               type="checkbox"
-              id="user-privacy"
               name="user-privacy"
-              value="true" />
-            <label class="checkbox-text" for="user-privacy">
-              <span class="checkbox-span">
-                <svg width="10" height="8">
-                  <use
-                    class="icon-vector"
-                    href="./images/icons.svg#icon-vector"></use>
+              id="user-privacy"
+              value="true"
+            />
+            <label class="form-label" for="user-privacy">
+              <span class="checkbox-icon">
+                <svg class="icon-vector" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="checkbox-link" href="">Privacy Policy</a>
+              <span class="privacy-checkbox-text">
+                I accept the terms and conditions of the
+                <a href="" class="privacy-link">Privacy Policy</a></span
+              >
             </label>
           </div>
           <button class="modal-btn-send" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
