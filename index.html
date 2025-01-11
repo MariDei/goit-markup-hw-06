@@ -149,7 +149,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" id="openModalBtn">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Feature section -->
@@ -803,8 +805,9 @@
     </footer>
     <!-- Modal window -->
     <div class="backdrop">
-      <div class="modal">
+      <div id="modal" class="modal">
         <button
+          id="closeModal"
           class="modal-btn-close"
           type="button"
           aria-label="Modal close button">
@@ -887,5 +890,7 @@
         </form>
       </div>
     </div>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
