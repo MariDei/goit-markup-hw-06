@@ -2,7 +2,7 @@ const modal = document.getElementById('backdrop');
 const openModalBtn = document.getElementById('open-modal-btn');
 const closeModalBtn = document.getElementById('close-modal-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
-const mobileMenuBtn = document.querySelector('.mobile-nav-menu');
+const mobileMenuBtn = document.querySelector('.mobile-burger-btn');
 const mobileCloseBtn = document.querySelector('.mobile-close-btn');
 
 function openModal() {
