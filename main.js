@@ -1,8 +1,8 @@
 const modal = document.getElementById('backdrop');
 const openModalBtn = document.getElementById('open-modal-btn');
 const closeModalBtn = document.getElementById('close-modal-btn');
-const mobileMenu = document.querySelector('.mobile-menu');
-const mobileMenuBtn = document.querySelector('.mobile-burger-btn');
+const mobileMenu = document.querySelector('.js-mobile-menu');
+const mobileOpenBtn = document.querySelector('.mobile-burger-btn');
 const mobileCloseBtn = document.querySelector('.mobile-close-btn');
 
 function openModal() {
@@ -25,7 +25,7 @@ openModalBtn.addEventListener('click', openModal);
 
 closeModalBtn.addEventListener('click', closeModal);
 
-mobileMenuBtn.addEventListener('click', openMobileMenu);
+mobileOpenBtn.addEventListener('click', openMobileMenu);
 
 mobileCloseBtn.addEventListener('click', closeMobileMenu);
 
