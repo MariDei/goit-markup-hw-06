@@ -1,5 +1,5 @@
-const modal = document.getElementById('backdrop');
-const openModalBtn = document.getElementById('open-modal-btn');
+const modal = document.querySelector('.backdrop');
+const openModalBtn = document.querySelector('.hero-button');
 const closeModalBtn = document.getElementById('close-modal-btn');
 const mobileMenu = document.querySelector('.js-mobile-menu');
 const mobileOpenBtn = document.querySelector('.mobile-burger-btn');
