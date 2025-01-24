@@ -1,38 +1,32 @@
 const modal = document.querySelector('.backdrop');
 const openModalBtn = document.querySelector('.hero-button');
 const closeModalBtn = document.getElementById('close-modal-btn');
-const mobileMenu = document.querySelector('.js-mobile-menu');
+const mobileModal = document.querySelector('.js-mobile-menu');
 const mobileOpenBtn = document.querySelector('.mobile-burger-btn');
 const mobileCloseBtn = document.querySelector('.mobile-close-btn');
+const scrollBtn = document.querySelector('.scroll-btn');
 
-function openModal() {
+openModalBtn.addEventListener('click', () => {
   modal.classList.add('is-open');
-}
+});
 
-function closeModal() {
+closeModalBtn.addEventListener('click', () => {
   modal.classList.remove('is-open');
-}
-
-function openMobileMenu() {
-  mobileMenu.classList.add('is-open');
-}
-
-function closeMobileMenu() {
-  mobileMenu.classList.remove('is-open');
-}
-
-openModalBtn.addEventListener('click', openModal);
-closeModalBtn.addEventListener('click', closeModal);
-mobileOpenBtn.addEventListener('click', openMobileMenu);
-mobileCloseBtn.addEventListener('click', closeMobileMenu);
+});
 
 window.addEventListener('click', function (event) {
   if (event.target === modal) {
-    closeModal();
+    modal.classList.remove('is-open');
   }
 });
 
-const scrollBtn = document.querySelector('.scroll-btn');
+mobileOpenBtn.addEventListener('click', () => {
+  mobileModal.classList.toggle('is-open');
+});
+
+mobileCloseBtn.addEventListener('click', () => {
+  mobileModal.classList.remove('is-open');
+});
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 250) {
