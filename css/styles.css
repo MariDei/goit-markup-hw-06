@@ -27,9 +27,9 @@ a {
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 button {
@@ -47,8 +47,8 @@ input {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -102,9 +102,9 @@ input {
 }
 
 .header .logo {
-  display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
+  display: inline-block;
 }
 
 .logo-header {
@@ -117,12 +117,12 @@ input {
 }
 
 .mobile-burger-btn {
+  width: 24px;
+  height: 24px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  width: 24px;
-  height: 24px;
   background-color: transparent;
   border: none;
 }
@@ -138,10 +138,10 @@ input {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 72px 24px 40px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 72px 24px 40px 16px;
   background-color: #fff;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -155,17 +155,17 @@ input {
 }
 
 .mobile-close-btn {
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 24px;
   right: 24px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
   background-color: #e7e9fc;
-  padding: 0;
+  border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -231,17 +231,17 @@ input {
 }
 
 .mobile-socials-item {
-  display: flex;
   width: 40px;
   height: 40px;
+  display: flex;
 }
 
 .mobile-socials-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
 }
@@ -276,9 +276,9 @@ input {
 
   .nav-link {
     position: relative;
-    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
     color: #2e2f42;
     font-size: 16px;
     font-weight: 500;
@@ -296,12 +296,12 @@ input {
   }
 
   .nav-link.current::after {
+    width: 100%;
+    height: 4px;
     content: '';
     position: absolute;
     left: 0;
     bottom: -1px;
-    width: 100%;
-    height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
   }
@@ -351,8 +351,8 @@ input {
 /* Hero section */
 .hero-section {
   max-width: 320px;
-  padding: 72px 0;
   margin: 0 auto;
+  padding: 72px 0;
   text-align: center;
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -376,9 +376,9 @@ input {
 }
 
 .hero-title {
-  display: block;
   max-width: 288px;
   margin: 0 auto 72px auto;
+  display: block;
   color: #fff;
   font-size: 36px;
   font-weight: 700;
@@ -389,22 +389,22 @@ input {
 }
 
 .hero-button {
-  display: block;
-  align-items: center;
   min-width: 169px;
   height: 56px;
-  padding: 16px 32px;
   margin: 0 auto;
+  padding: 16px 32px;
+  display: block;
+  align-items: center;
   text-align: center;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
   background-color: #4d5ae5;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -534,13 +534,13 @@ input {
   }
 
   .feature-box-icon {
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    padding: 24px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 264px;
-    height: 112px;
-    padding: 24px 100px;
-    margin-bottom: 8px;
     background-color: #f4f4fd;
     border-radius: 4px;
     border: 1px solid #8e8f99;
@@ -634,11 +634,11 @@ input {
 }
 
 .team-socials-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   color: #f4f4fd;
   background-color: #4d5ae5;
   border-radius: 50%;
@@ -702,11 +702,10 @@ input {
 }
 
 .portfolio-app-img-text {
-  position: absolute;
-  top: 0;
-  padding: 40px 32px;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
   padding: 40px 32px;
   color: #f4f4fd;
   background-color: #4d5ae5;
@@ -822,11 +821,11 @@ input {
 }
 
 .footer-socials-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -855,16 +854,16 @@ input {
   width: 264px;
   height: 40px;
   padding: 8px 16px;
-  color: #fff;
-  background-color: transparent;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  color: #fff;
+  background-color: transparent;
   outline: transparent;
   border-radius: 4px;
   border: 1px solid #fff;
-  opacity: 0.3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
 }
 
 .footer-subscribe-input::placeholder {
@@ -872,14 +871,14 @@ input {
 }
 
 .footer-subscribe-btn {
+  min-width: 165px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 8px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  min-width: 165px;
-  height: 40px;
-  padding: 8px 24px;
-  margin: 0 auto;
   color: #fff;
   background-color: #4d5ae5;
   text-align: center;
@@ -966,18 +965,18 @@ input {
 }
 
 .scroll-btn {
+  width: 50px;
+  height: 50px;
   position: fixed;
   bottom: 20px;
   right: 10px;
   z-index: 9999999;
-  width: 50px;
-  height: 50px;
+  padding: 10px;
   display: none;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  border: none;
   border-radius: 50px;
+  border: none;
   color: inherit;
   background-color: #4d5ae5;
 }
@@ -992,14 +991,14 @@ input {
 
 /* Modal window */
 .backdrop {
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1015,11 +1014,11 @@ input {
 }
 
 .modal {
+  width: 288px;
+  min-height: 623px;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 288px;
-  min-height: 623px;
   padding: 72px 16px 24px 16px;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -1030,18 +1029,18 @@ input {
 }
 
 .modal-btn-close {
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 24px;
   right: 24px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1072,8 +1071,8 @@ input {
 }
 
 .form-label {
-  display: block;
   margin-bottom: 4px;
+  display: block;
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
@@ -1121,11 +1120,11 @@ input {
   width: 100%;
   min-height: 120px;
   padding: 8px 16px;
-  color: rgba(46, 47, 66, 0.4);
-  background-color: transparent;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   outline: transparent;
@@ -1153,17 +1152,17 @@ input {
 .checkbox-icon {
   width: 16px;
   height: 16px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   fill: transparent;
-  margin-right: 8px;
-  flex-shrink: 0;
 }
 
 .checkbox:focus + .form-label > .checkbox-icon {
@@ -1188,19 +1187,19 @@ input {
 }
 
 .modal-btn-send {
+  min-width: 169px;
+  height: 56px;
+  margin: auto;
+  padding: 16px 32px;
   display: block;
   justify-content: center;
   align-items: center;
-  padding: 16px 32px;
-  margin: auto;
-  min-width: 169px;
-  height: 56px;
-  color: #fff;
-  background-color: #4d5ae5;
   text-align: center;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4d5ae5;
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
