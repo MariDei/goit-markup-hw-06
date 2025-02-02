@@ -982,7 +982,8 @@ input {
   background-color: #4d5ae5;
 }
 
-.scroll-btn:hover {
+.scroll-btn:hover,
+.scroll-btn:focus {
   background-color: #404bbf;
 }
 
