@@ -991,6 +991,11 @@ input {
   fill: #fff;
 }
 
+.icon-arrow-up:hover,
+.icon-arrow-up:focus {
+  fill: #2f2f37;
+}
+
 /* Modal window */
 .backdrop {
   width: 100%;
