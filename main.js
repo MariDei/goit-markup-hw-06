@@ -4,6 +4,8 @@ const closeModalBtn = document.getElementById('close-modal-btn');
 const mobileModal = document.querySelector('.js-mobile-menu');
 const mobileOpenBtn = document.querySelector('.mobile-burger-btn');
 const mobileCloseBtn = document.querySelector('.mobile-close-btn');
+const navLink = document.querySelector('.nav-link');
+const mobileNavLink = document.querySelector('.mobile-nav-link');
 const scrollBtn = document.querySelector('.scroll-btn');
 
 openModalBtn.addEventListener('click', () => {
@@ -26,6 +28,12 @@ mobileOpenBtn.addEventListener('click', () => {
 
 mobileCloseBtn.addEventListener('click', () => {
   mobileModal.classList.remove('is-open');
+});
+
+navLink.addEventListener('click', openModalBtn);
+mobileNavLink.addEventListener('click', () => {
+  mobileCloseBtn();
+  openModalBtn();
 });
 
 window.addEventListener('scroll', () => {
