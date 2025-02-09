@@ -1,18 +1,18 @@
 const modal = document.querySelector('.backdrop');
-const openModalBtn = document.querySelector('.hero-button');
-const closeModalBtn = document.getElementById('close-modal-btn');
+const openModal = document.querySelector('.hero-button');
+const closeModal = document.getElementById('close-modal-btn');
 const mobileModal = document.querySelector('.js-mobile-menu');
-const mobileOpenBtn = document.querySelector('.mobile-burger-btn');
-const mobileCloseBtn = document.querySelector('.mobile-close-btn');
+const mobileOpenModal = document.querySelector('.mobile-burger-btn');
+const mobileCloseModal = document.querySelector('.mobile-close-btn');
 const navLink = document.querySelector('.nav-link');
 const mobileNavLink = document.querySelector('.mobile-nav-link');
 const scrollBtn = document.querySelector('.scroll-btn');
 
-openModalBtn.addEventListener('click', () => {
+openModal.addEventListener('click', () => {
   modal.classList.add('is-open');
 });
 
-closeModalBtn.addEventListener('click', () => {
+closeModal.addEventListener('click', () => {
   modal.classList.remove('is-open');
 });
 
@@ -22,18 +22,17 @@ window.addEventListener('click', function (event) {
   }
 });
 
-mobileOpenBtn.addEventListener('click', () => {
+mobileOpenModal.addEventListener('click', () => {
   mobileModal.classList.toggle('is-open');
 });
 
-mobileCloseBtn.addEventListener('click', () => {
+mobileCloseModal.addEventListener('click', () => {
   mobileModal.classList.remove('is-open');
 });
 
-navLink.addEventListener('click', openModalBtn);
+navLink.addEventListener('click', openModal);
 mobileNavLink.addEventListener('click', () => {
-  mobileCloseBtn();
-  openModalBtn();
+  mobileCloseModal();
 });
 
 window.addEventListener('scroll', () => {
