@@ -971,7 +971,6 @@ input {
   position: fixed;
   bottom: 20px;
   right: 10px;
-  z-index: 9999999;
   padding: 10px;
   display: none;
   justify-content: center;

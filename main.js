@@ -30,9 +30,8 @@ mobileCloseModal.addEventListener('click', () => {
   mobileModal.classList.remove('is-open');
 });
 
-navLink.addEventListener('click', openModal);
 mobileNavLink.addEventListener('click', () => {
-  mobileCloseModal();
+  mobileCloseModal, navLink();
 });
 
 window.addEventListener('scroll', () => {
