@@ -35,7 +35,7 @@ mobileNavLink.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 250) {
+  if (window.scrollY > 100) {
     scrollBtn.style.display = 'flex';
   } else {
     scrollBtn.style.display = 'none';
